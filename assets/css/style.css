@@ -1,0 +1,427 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    /* **********COLORS********** */
+    --primary-color: #95010E;
+    --primary-hover-color: #7B010B;
+    --light-pink-color: #FFF8EE;
+    --color-light: #B6B6B6CC;
+    --color-dark: #101010AB;
+    --color-black: #000;
+    --color-white: #fff;
+    /* **********COLORS********** */
+
+    /* **********FONTS********** */
+    --font-primary: 'Fraunces', serif;
+    --font-secondary: 'Libre Franklin', sans-serif;
+    /* **********FONTS********** */
+
+    --transition-anim: .3s all ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-dark);
+    font-family: var(--font-secondary);
+}
+
+.big--heading {
+    font-size: 86px;
+}
+
+
+.font--primary {
+    font-family: var(--font-primary);
+}
+
+.font--secondary {
+    font-family: var(--font-secondary);
+}
+
+.fw--semi--bold {
+    font-weight: 600;
+}
+
+/* ------------------------------ NAVBAR ------------------------------ */
+.navbar .logo {
+    max-width: 140px;
+    height: auto;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler .menu--collapse--icon {
+    color: var(--color-black);
+    font-size: 28px;
+}
+
+.shop .navbar .navbar-toggler .menu--collapse--icon {
+    color: var(--color-white);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .nav-link {
+    padding: 6px 20px !important;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+/* ------------------------------ NAVBAR ------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: var(--font-primary)
+}
+
+.text--primary {
+    color: var(--primary-color);
+}
+
+.text--light {
+    color: var(--color-light);
+}
+
+.btn--primary {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 18px 25px 18px 25px;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    display: inline-block;
+}
+
+.btn--primary:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--20 {
+    font-size: 20px;
+}
+
+.img--hover--scale {
+    overflow: hidden;
+}
+
+.img--hover--scale img {
+    transform: scale(1);
+    transition: .3s all ease-in-out;
+}
+
+.img--hover--scale img:hover {
+    transform: scale(1.1);
+}
+
+.bg--black {
+    background-color: #101010;
+}
+
+.footer {
+    font-family: var(--font-primary);
+    background-color: var(--light-pink-color);
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.section--bg {
+    background-image: url('../images/section--bg.png');
+    background-size: cover;
+    background-position: center left;
+    background-color: var(--light-pink-color);
+}
+
+.discover--more .big--heading {
+    margin: 0;
+    font-family: var(--font-primary);
+    color: var(--color-black);
+}
+
+
+.discover--more .discription {
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+}
+
+.hight--wide--expert {
+    background-image: url('../images/egrv.png');
+    background-color: var(--primary-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hight--wide--expert .icons {
+    max-width: 40px;
+    height: auto;
+}
+
+/* extra--info */
+.extra--info {
+    position: relative;
+    z-index: 1;
+}
+
+.extra--info .before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 15%;
+    z-index: -1;
+}
+
+.extra--info .after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 15%;
+    z-index: -1;
+}
+
+.extra--info .title {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.extra--info .heading {
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    font-size: 50px;
+}
+
+.extra--info .discription {
+    font-family: var(--font-secondary);
+    color: var(--color-light);
+    font-size: 18px;
+}
+
+.extra--info .batch--container {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    max-width: 140px;
+}
+
+/* extra--info */
+
+/* ------------------------------ HOME ------------------------------ */
+
+.home .our--fresh--products .heading {
+    font-size: 50px;
+}
+
+.home .video--section {
+    background-image: url('../images/video--section--bg.png');
+    padding: 260px 0px 260px 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.home .video--section .video--play--icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}
+
+.home .video--section .video--play--icon:hover {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+.home .video--section .btn-close {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    filter: invert(1);
+    opacity: 1;
+}
+
+/* ------------------------------ SHOP ------------------------------ */
+
+/* ------------------------------ SHOP ------------------------------ */
+.shop.header {
+    background-image: url('../images/shop--header--bg.png');
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.shop .navbar .nav-link {
+    color: var(--color-white);
+}
+
+.shop.header::before {
+    background-color: var(--color-black);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    zoom: 1;
+    opacity: 0.7;
+    content: "";
+}
+
+.shop .product--card a {
+    text-decoration: none;
+}
+
+.shop .pagination a {
+    color: var(--primary-color);
+}
+
+.shop .pagination a:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgb(149 1 14 / 16%);
+    ;
+}
+
+.shop .pagination a.active {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    border-color: var(--primary-color);
+}
+
+/* ------------------------------ SHOP ------------------------------ */
+
+/* ------------------------------ CONTACT--US ------------------------------ */
+.contact--us .heading {
+    font-size: 50px;
+}
+
+.contact--us .contact--form {
+    border: 1px dashed var(--primary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.contact--us .contact--form::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/contact--form--after.png);
+    width: 150px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+}
+
+.contact--us .contact--form input,
+.contact--us .contact--form textarea {
+    border-radius: 0;
+    padding: 0.975rem 0.75rem;
+}
+
+.contact--us .contact--form input:focus,
+.contact--us .contact--form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgb(149 1 14 / 9%);
+}
+
+/* ------------------------------ CONTACT--US ------------------------------ */
+
+/* ------------------------------ MEDIA QUERY ------------------------------ */
+/* SMALL DESKTOP */
+@media screen and (max-width:992px) {
+    .navbar {
+        background-color: var(--color-white);
+    }
+
+    .shop .navbar {
+        background-color: var(--color-black);
+    }
+
+    .navbar .nav-link {
+        padding: 20px 6px !important;
+    }
+
+    .navbar .nav-item:not(:last-child) {
+        border-bottom: 1px dotted var(--color-light);
+    }
+
+    .big--heading {
+        font-size: 64px;
+    }
+
+    .home .about--us .heading,
+    .home .our--fresh--products .heading,
+    .contact--us .heading {
+        font-size: 42px;
+    }
+
+    .home .video--section {
+        padding: 100px 0px 100px 0px;
+    }
+
+    .contact--us .contact--form::after {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* SMALL DESKTOP */
+/* MOBILE */
+@media screen and (max-width:576px) {
+    .big--heading {
+        font-size: 42px;
+    }
+
+    .home .about--us .heading,
+    .home .our--fresh--products .heading,
+    .contact--us .heading {
+        font-size: 36px;
+    }
+
+    .contact--us .contact--form::after {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* MOBILE */
+
+/* ------------------------------ MEDIA QUERY ------------------------------ */
